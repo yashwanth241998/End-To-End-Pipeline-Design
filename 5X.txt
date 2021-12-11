@@ -1,0 +1,23 @@
+Step 1 : Ingest COVID-19 data into Snowflake data warehouse using Fivetran ingestion tool.
+https://fivetran.com/dashboard/connectors/google_sheets/google_sheets.covid_19_indonesia_yashwanth_babu
+Google Sheet : google_sheets.covid_19_indonesia_yashwanth_babu
+
+SnowFlake
+https://fv34040.us-central1.gcp.snowflakecomputing.com/console#/internal/worksheet
+Table: 
+1.INTERVIEW_DB.PLAYGROUND_YASHWANTH_BABU
+2.Table: INTERVIEW_DB.PLAYGROUND_YASHWANTH_BABU.REGIONS_DEATH_RATES
+3.Table: INTERVIEW_DB.PLAYGROUND_YASHWANTH_BABU.MONTH_OVER_MONTH_CHANGES
+
+
+
+Step 2 : Model the data into meaningful datasets using Data Build Tool ( dbt )
+https://cloud.getdbt.com/#/accounts/39297/projects/63022/develop/
+
+
+Step 3 : Visualize metrics derived from the datasets within Google Data Studio
+https://datastudio.google.com/u/0/reporting/a23c97c1-0e59-43bc-b202-2d29a1905123/page/oLZhC/edit
+visualizations
+1.Location ISO code and Record count - table chart
+2.Location using map chart
+3.Active cases using in different locations
